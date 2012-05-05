@@ -2,7 +2,7 @@
 /**
  * Licensed under the MIT License
  * 
- *  Copyright (c) 2011 Sebastian Müller <info@sebastian-mueller.net>
+ *  Copyright (c) 2012 Sebastian Müller <info@sebastian-mueller.net>
  * 
  *  Permission is hereby granted, free of charge, to any person obtaining a copy
  *  of this software and associated documentation files (the "Software"), to deal
@@ -43,7 +43,7 @@ class GooglShortener extends Exception
    *
    * @var string The version number
    **/
-  const VERSION = '0.1.0';
+  const VERSION = '0.2.0';
   
   /**
    * Goo.gl API key
@@ -75,7 +75,7 @@ class GooglShortener extends Exception
    * @var array
    **/
   public static $CURL_OPTS = array(
-      CURLOPT_USERAGENT      => 'GoogShortener',
+      CURLOPT_USERAGENT      => 'GooglShortener',
       CURLOPT_CONNECTTIMEOUT => 5,
       CURLOPT_RETURNTRANSFER => 1,
       CURLOPT_TIMEOUT        => 30
