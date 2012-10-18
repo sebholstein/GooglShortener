@@ -186,7 +186,7 @@ class GooglShortener extends Exception
     
     curl_setopt($curl,CURLOPT_SSL_VERIFYPEER,0);
     curl_setopt($curl,CURLOPT_SSL_VERIFYHOST,0);
-    curl_setopt($curl, CURLOPT_HTTPHEADERS,array('Content-Type:application/json; Accept: application/json; charset=utf8'));
+    curl_setopt($curl, CURLOPT_HTTPHEADER,array('Content-Type:application/json; Accept: application/json; charset=utf8'));
     
     // call API
     $result = curl_exec($curl);
